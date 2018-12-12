@@ -16,6 +16,9 @@ import android.util.Log;
 
 import java.util.Date;
 
+import fr.selic.thuitexternal.IntentAppointment;
+import fr.selic.thuitexternal.getPatient;
+
 public class MyCordovaPlugin extends CordovaPlugin {
   private static final String TAG = "MyCordovaPlugin";
 
