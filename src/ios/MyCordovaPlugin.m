@@ -1,6 +1,7 @@
 #import "MyCordovaPlugin.h"
 
 #import <Cordova/CDVAvailability.h>
+#import <ThuitExternal/ThuitExternal.h>
 
 @implementation MyCordovaPlugin
 
