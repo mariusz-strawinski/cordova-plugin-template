@@ -42,6 +42,7 @@
             </feature>
         </config-file>
 
+        <framework src="src/ios/external-IDELab.framework" />
         <header-file src="src/ios/MyCordovaPlugin.h" />
         <source-file src="src/ios/MyCordovaPlugin.m" />
     </platform>
