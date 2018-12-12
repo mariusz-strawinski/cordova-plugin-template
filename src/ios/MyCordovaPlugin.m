@@ -1,7 +1,6 @@
 #import "MyCordovaPlugin.h"
 
 #import <Cordova/CDVAvailability.h>
-#import <ThuitExternal/ThuitExternal.h>
 
 @implementation MyCordovaPlugin
 
@@ -11,10 +10,10 @@
 - (void)echo:(CDVInvokedUrlCommand *)command {
   NSString* phrase = [command.arguments objectAtIndex:0];
   NSLog(@"%@", phrase);
-  
+  /*
 TEAppointmentRequest *request = [TEAppointmentRequest requestWithSourceApp:@"app2app" patient:patient]; 
   [TEIDELab openAppointment:request success:^{ NSLog(@"Success"); } failure:^(NSError *error) { NSLog(@"Failure"); }];
-  
+  */
 }
 
 - (void)getDate:(CDVInvokedUrlCommand *)command {
