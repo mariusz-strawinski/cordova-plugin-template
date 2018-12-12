@@ -27,7 +27,7 @@
 
       <source-file src="src/android/com/example/MyCordovaPlugin.java" target-dir="src/com/example/" />
       <resource-file src="src/android/com/example/external-IDELab.aar" target="libs/external-IDELab.aar" />
-      <framework src="src/android/com/example/*.gradle" custom="true" type="gradleReference" />
+      <framework src="src/android/com/example/MyCordovaPlugin.gradle" custom="true" type="gradleReference" />
     </platform>
 
     <!-- ios -->
