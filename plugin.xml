@@ -11,24 +11,6 @@
     <issue>https://github.com/mariusz-strawinski/cordova-plugin-template/issues</issue>
 
     <!-- android -->
-    <platform name="android">
-      <js-module src="www/plugin.js" name="plugin">
-        <runs/>
-
-        <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
-        <clobbers target="MyCordovaPlugin" />
-      </js-module>
-      <config-file target="res/xml/config.xml" parent="/*">
-        <feature name="MyCordovaPlugin">
-          <param name="android-package" value="com.example.MyCordovaPlugin" />
-          <param name="onload" value="true" />
-        </feature>
-      </config-file>
-
-      <source-file src="src/android/com/example/MyCordovaPlugin.java" target-dir="src/com/example/" />
-      <resource-file src="src/android/com/example/external-IDELab.aar" target="libs/external-IDELab.aar" />
-      <framework src="src/android/com/example/MyCordovaPlugin.gradle" custom="true" type="gradleReference" />
-    </platform>
 
     <!-- ios -->
     <platform name="ios">
