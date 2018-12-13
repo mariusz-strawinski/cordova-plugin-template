@@ -33,7 +33,7 @@ public class MyCordovaPlugin extends CordovaPlugin {
 
   public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
     if(action.equals("echo")) {
-      //Patient pPatient = new Patient("Test","Subject",null,"11/12/1961",null,"123456",null,"1112");
+      //Patient pPatient = new Patient("Test Subject","Test","Subject",null,"11/12/1961",null,"123456",null,"1112");
       Patient pPatient;
       IntentAppointment iAppointment;
       //Context context=this.cordova.getActivity().getApplicationContext();
