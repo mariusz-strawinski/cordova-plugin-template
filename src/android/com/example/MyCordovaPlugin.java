@@ -15,10 +15,11 @@ import org.json.JSONException;
 import android.util.Log;
 
 import java.util.Date;
-/*
-import fr.selic.thuitexternal.IntentAppointment;
-import fr.selic.thuitexternal.getPatient;
-*/
+
+import fr.selic.thuitexternal.appointment.IntentAppointment;
+import fr.selic.thuitexternal.appointment.IntentAppointmentResult;
+import fr.selic.thuitexternal.appointment.Patient;
+
 public class MyCordovaPlugin extends CordovaPlugin {
   private static final String TAG = "MyCordovaPlugin";
 
