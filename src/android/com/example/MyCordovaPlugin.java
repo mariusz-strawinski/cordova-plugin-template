@@ -31,11 +31,12 @@ public class MyCordovaPlugin extends CordovaPlugin {
 
   public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
     if(action.equals("echo")) {
+      pPatient = new Patient('Test','Subject',null,'11/12/1961',null,null,null,'1112');
       
-      new IntentAppointment(this, getPatient()).startAppointment();
+      iAppointment = new IntentAppointment(this, pPatient).startAppointment();
       String phrase = args.getString(0);
       // Echo back the first argument
-      Log.d(TAG, phrase);
+      Log.d(iAppointment);
     } else if(action.equals("getDate")) {
       // An example of returning data back to the web layer
       final PluginResult result = new PluginResult(PluginResult.Status.OK, (new Date()).toString());
