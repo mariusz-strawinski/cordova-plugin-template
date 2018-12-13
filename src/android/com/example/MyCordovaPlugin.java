@@ -34,9 +34,10 @@ public class MyCordovaPlugin extends CordovaPlugin {
       //Patient pPatient = new Patient("Test","Subject",null,"11/12/1961",null,null,null,"1112");
       Patient pPatient;
       IntentAppointment iAppointment;
-      
+      Activity mActivity;
+
       pPatient = new Patient();
-      new IntentAppointment(iAppointment, pPatient).startAppointment();
+      new IntentAppointment(mActivity, pPatient).startAppointment();
       
       
       
