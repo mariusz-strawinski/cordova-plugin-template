@@ -32,7 +32,7 @@ public class MyCordovaPlugin extends CordovaPlugin {
   public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
     if(action.equals("echo")) {
       
-      //new IntentAppointment(this, getPatient()).startAppointment();
+      new IntentAppointment(this, getPatient()).startAppointment();
       String phrase = args.getString(0);
       // Echo back the first argument
       Log.d(TAG, phrase);
