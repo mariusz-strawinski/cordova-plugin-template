@@ -39,7 +39,7 @@ public class MyCordovaPlugin extends CordovaPlugin {
       Context context=this.cordova.getActivity().getApplicationContext();
 
       pPatient = new Patient();
-      new IntentAppointment(this, pPatient).startAppointment();
+      new IntentAppointment(context.getActivity(), pPatient).startAppointment();
       
       
       
